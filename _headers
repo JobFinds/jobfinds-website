@@ -1,0 +1,33 @@
+# HTML pages — never cache, always fetch fresh
+/*.html
+  Cache-Control: no-cache, no-store, must-revalidate
+  Pragma: no-cache
+  Expires: 0
+
+# Root index
+/
+  Cache-Control: no-cache, no-store, must-revalidate
+  Pragma: no-cache
+  Expires: 0
+
+# CSS files — cache for 1 day only
+/*.css
+  Cache-Control: public, max-age=86400
+
+# JavaScript files — cache for 1 day only
+/*.js
+  Cache-Control: public, max-age=86400
+
+# Images — cache for 7 days (images rarely change)
+/*.jpg
+  Cache-Control: public, max-age=604800
+/*.jpeg
+  Cache-Control: public, max-age=604800
+/*.png
+  Cache-Control: public, max-age=604800
+/*.webp
+  Cache-Control: public, max-age=604800
+/*.svg
+  Cache-Control: public, max-age=604800
+/*.gif
+  Cache-Control: public, max-age=604800
